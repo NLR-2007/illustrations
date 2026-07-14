@@ -44,13 +44,13 @@ ${objectDescriptions}
 ${flowDescription}
 
 CHARACTER LOCK:
-- Simple mascot with a rounded soft white body (MUST be a single continuous rounded shape, NOT a stacked head-and-body "snowman" structure).
-- Large expressive solid-black circular eyes.
-- Tiny friendly mouth (simple thin black hand-drawn smile).
-- Thin imperfect hand-drawn black arms.
-- Thin imperfect hand-drawn black legs.
-- Two small bright yellow chest marks (critical identification; must be two small thin diagonal ticks, NOT large rectangular buttons).
-- Proportions are short and friendly. No clothes except strictly required scene accessories.
+- Simple mascot with a vertical egg-shaped or potato-shaped smooth white body outline (MUST be a single continuous rounded shape, NOT a stacked head-and-body "snowman" structure).
+- Large upright oval white eyes, each containing a large solid black circular pupil. Inside each black pupil, there are two tiny white circular light reflections (one larger at the top-left, one smaller at the bottom-right). Above the eyes are two thin curved black eyebrow lines.
+- Tiny friendly mouth (simple thin black hand-drawn curved smile line directly below the eyes).
+- Thin sketchy hand-drawn black arms ending in hands with 4 fingers each.
+- Thin sketchy hand-drawn black legs ending in flat black feet.
+- Exactly two small, organic yellow paint marks on the center of the chest, stacked one above the other (critical identification; do NOT draw them as large rectangular buttons, code symbols, or badges).
+- Proportions are short and friendly. No clothes except required accessories.
 
 STYLE LOCK:
 - Minimal editorial hand-drawn line-art illustration style (outlines must look like thin, sketchy, hand-drawn lines, NOT thick clean geometric vector curves).

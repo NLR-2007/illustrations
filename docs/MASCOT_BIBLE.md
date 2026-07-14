@@ -8,12 +8,12 @@ This document defines the strict visual identity of the original mascot for **Ex
 
 | Feature | Description | Rules / Constraints |
 | :--- | :--- | :--- |
-| **Body** | Simple rounded white body | Must remain clean white. No gradients. No texture. Proportions should be simple and round. |
-| **Eyes** | Large expressive black eyes | Solid black. Expressive, conveying curiosity, surprise, or joy. Do not add pupils or colored irises. |
-| **Mouth** | Small friendly mouth | A simple thin black hand-drawn line. Can be a smile, straight line, or open curve depending on emotion. |
-| **Arms** | Thin, imperfect hand-drawn black arms | Minimalist black outlines. Hand-drawn/sketchy feel. No detailed fingers or hands. |
-| **Legs** | Thin, imperfect hand-drawn black legs | Minimalist black outlines. Sketchy feet. |
-| **Chest Marks** | Two small bright yellow chest marks | **MANDATORY**. Two small diagonal or horizontal marks on the chest. Represents the mascot's core visual key. |
+| **Body** | Egg-shaped smooth white outline | Vertical egg-shaped or potato-shaped smooth body outline. Must remain clean white. No gradients. |
+| **Eyes** | Upright white ovals with black pupils | Large upright oval white eyes, each containing a large solid black circular pupil. Inside each black pupil, there are two tiny white circular light reflections (one larger at the top-left, one smaller at the bottom-right). Above the eyes are two thin curved black eyebrow lines. |
+| **Mouth** | Small friendly smile | A simple thin black hand-drawn curved smile line, positioned directly below the eyes. |
+| **Arms** | Thin black line arms | Thin black lines ending in simple hand-drawn hands with 4 fingers each. |
+| **Legs** | Thin black line legs | Thin black lines ending in simple flat black feet. |
+| **Chest Marks** | Two small yellow blobs | Exactly two small, organic yellow paint marks on the center of the chest, stacked one above the other. |
 | **Colors** | Black, white, and bright yellow | Strictly limited to `#111111` (black), `#FFFFFF` (white), and `#FFC21A` (yellow). No other colors. |
 | **Background** | Clean, empty white background | Flat, pure white `#FFFFFF` background. No gradients, shadows, or scene textures. |
 

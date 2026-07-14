@@ -39,7 +39,9 @@ describe('Illustration Planning & Prompt Engine', () => {
 
     expect(prompt).toContain('STYLE LOCK');
     expect(prompt).toContain('CHARACTER LOCK');
-    expect(prompt).toContain('yellow chest marks');
+    expect(prompt).toContain('yellow');
+    expect(prompt).toContain('chest');
+    expect(prompt).toContain('marks');
   });
 
   it('audits prompt text and returns compliance reports', () => {

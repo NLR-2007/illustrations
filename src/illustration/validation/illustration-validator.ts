@@ -35,8 +35,8 @@ export function validateIllustrationPackage(
 
   let identityScore = 0;
   if (promptLower.includes('white body') || promptLower.includes('blob') || promptLower.includes('rounded')) identityScore += 3;
-  if (promptLower.includes('black eyes') || promptLower.includes('circular eyes')) identityScore += 3;
-  if (promptLower.includes('yellow chest marks') || promptLower.includes('chest marks')) identityScore += 4;
+  if (promptLower.includes('black eyes') || promptLower.includes('circular eyes') || promptLower.includes('oval white eyes') || promptLower.includes('black pupils')) identityScore += 3;
+  if (promptLower.includes('chest marks') || (promptLower.includes('chest') && promptLower.includes('marks'))) identityScore += 4;
 
   const colorCompliance = !promptLower.includes('red') && 
                           !promptLower.includes('blue') && 

@@ -15,12 +15,12 @@ This skill defines how an AI agent designs mascot-based conceptual illustrations
 You must strictly adhere to the mascot and styling rules below. Avoid common rendering failures:
 
 ### 1. Mascot Characteristics (Locks)
-- **Body**: **ONE single, continuous, rounded bean/egg/blob shape**. Do **NOT** stack a separate head circle on top of a body circle (no "snowman" structure). The eyes and mouth are drawn directly inside this single shape.
-- **Eyes**: Large, expressive, solid-black circular eyes (no irises or white pupils).
-- **Mouth**: A simple, thin, black hand-drawn smile line.
-- **Chest Marks**: Exactly **two small, thin, diagonal yellow ticks** on the chest (Hex `#FFC21A`). Do **NOT** draw them as large rectangular buttons, squares, or badges.
-- **Limbs**: Thin, imperfect, hand-drawn sketchy black arms and legs.
-- **Clothing**: **None**. Do not add shirts, pants, hats, or scarves unless required by the scene context (e.g. safety goggles for science).
+- **Body**: **ONE single, continuous, vertical egg-shaped or potato-shaped smooth white outline**. Do **NOT** stack a separate head circle on top of a body circle (no "snowman" structure). The eyes and mouth are drawn directly inside this single shape.
+- **Eyes**: Large upright white ovals, each containing a large solid black circular pupil. Inside each black pupil, there are two tiny white circular light reflections (one larger at the top-left, one smaller at the bottom-right). Above the eyes are two thin curved black eyebrow lines.
+- **Mouth**: A simple, thin, black hand-drawn curved smile line, positioned directly below the eyes.
+- **Chest Marks**: Exactly **two small, organic yellow paint marks** on the center of the chest, stacked one above the other. Do **NOT** draw them as large rectangular buttons, squares, or code symbols.
+- **Limbs**: Thin, sketchy black arms ending in hands with 4 fingers each, and thin sketchy black legs ending in flat black feet.
+- **Clothing**: **None**. Do not add shirts, pants, hats, or scarves unless required by the scene context.
 
 ### 2. Illustration Style (Locks)
 - **Style**: Minimalist, editorial, hand-drawn line-art outlines. Outlines must look like **thin, sketchy, imperfect hand-drawn ink/pencil strokes**, not thick, perfectly smooth geometric vector lines.
@@ -46,12 +46,12 @@ SCENE COMPOSITION:
 - Visual Flow: [List 2-4 flow steps with arrow indicators]
 
 CHARACTER LOCK:
-- Simple mascot with a rounded soft white body (MUST be a single continuous rounded shape, NOT a stacked head-and-body "snowman" structure).
-- Large expressive solid-black circular eyes.
-- Tiny friendly mouth (simple thin black hand-drawn smile).
-- Thin imperfect hand-drawn black arms.
-- Thin imperfect hand-drawn black legs.
-- Two small bright yellow chest marks (critical identification; must be two small thin diagonal ticks, NOT large rectangular buttons).
+- Simple mascot with a vertical egg-shaped or potato-shaped smooth white body outline (MUST be a single continuous rounded shape, NOT a stacked head-and-body "snowman" structure).
+- Large upright oval white eyes, each containing a large solid black circular pupil. Inside each black pupil, there are two tiny white circular light reflections (one larger at the top-left, one smaller at the bottom-right). Above the eyes are two thin curved black eyebrow lines.
+- Tiny friendly mouth (simple thin black hand-drawn curved smile line directly below the eyes).
+- Thin sketchy hand-drawn black arms ending in hands with 4 fingers each.
+- Thin sketchy hand-drawn black legs ending in flat black feet.
+- Exactly two small, organic yellow paint marks on the center of the chest, stacked one above the other (critical identification; do NOT draw them as large rectangular buttons, code symbols, or badges).
 - Proportions are short and friendly. No clothes except required accessories.
 
 STYLE LOCK:
