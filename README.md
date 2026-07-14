@@ -34,7 +34,27 @@ Hybrid mode places a conceptual scene and structured technical flow in one balan
 
 ![ExplainDraw Telegram automation visual](examples/showcase/telegram-automation.png)
 
-More examples are available in [`examples/illustrations/`](examples/illustrations/) and [`examples/showcase/`](examples/showcase/).
+### Original generated illustration gallery
+
+These generated examples remain part of the project and show how the mascot adapts to different educational, technical, celebratory, and comic compositions.
+
+#### Code launched — celebration scene
+
+![ExplainDraw code launch celebration](examples/illustrations/code-launched.jpg)
+
+#### Science fair — educational illustration
+
+![ExplainDraw science fair illustration](examples/illustrations/science-fair.png)
+
+#### Push files to Git — illustrated workflow
+
+![ExplainDraw Git workflow illustration](examples/illustrations/git-flowchart.png)
+
+#### Developer jokes — comic strip
+
+![ExplainDraw developer jokes comic](examples/illustrations/developer-jokes.png)
+
+Browse the source galleries in [`examples/illustrations/`](examples/illustrations/) and [`examples/showcase/`](examples/showcase/).
 
 ---
 
