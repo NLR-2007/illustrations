@@ -89,6 +89,9 @@ These reference illustrations define the mascot's proportions, postures, and cle
 ### 5. Live Generated Example (Science Fair Experiment)
 ![Mascot Science Fair](examples/illustrations/science-fair.png)
 
+### 6. Live Generated Infographic Example (Push Files to Git)
+![Mascot Git Flowchart](examples/illustrations/git-flowchart.png)
+
 ---
 
 ## 🛠️ Installation & Setup
