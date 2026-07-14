@@ -44,3 +44,15 @@ Accessories should be minimal, simple line art, colored in black or highlighted 
 - **Technology**: Simple flat laptop, server rack, mobile phone.
 - **Learning/Research**: Standard book, magnifying glass, safety goggles, beaker, chalkboard.
 - **Business/Travel**: Simple backpack, folder, document sheet.
+
+---
+
+## ⚠️ CRITICAL: Common AI Mistakes to Avoid (Read Before Generating)
+
+If you are an AI image generator or assistant reading these guidelines, you **MUST** avoid these common rendering failures:
+
+1. **NO "SNOWMAN" BODY SHAPE**: Do **NOT** draw the mascot with a separate head circle stacked on top of a body circle. The body **MUST** be **one single continuous rounded shape** (like an egg, a bean, or a simple smooth blob). The eyes and mouth are drawn directly inside this single shape.
+2. **NO HEAVY VECTOR CLIP-ART STYLE**: Do **NOT** draw thick, perfectly smooth geometric vector lines. The line art **MUST** look like a **thin, sketchy, imperfect hand-drawn ink/pencil outline**. 
+3. **NO BACKGROUND GRADIENTS OR COLORS**: Do **NOT** add blue sky gradients, shadows, or background elements unless explicitly requested. The background **MUST** be **100% solid flat pure white (`#FFFFFF`)**.
+4. **NO RECTANGULAR/BLOCKY CHEST MARKS**: Do **NOT** draw the yellow chest marks as large rectangular boxes, squares, or button shapes. They **MUST** be **two small, thin, subtle diagonal brushstrokes or ticks** on the chest.
+

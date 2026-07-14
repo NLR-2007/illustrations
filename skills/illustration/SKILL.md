@@ -37,7 +37,11 @@ A structured request JSON matching the request schema:
 
 ## WHAT MUST NEVER BE DONE
 - **NEVER** add clothes or remove the two yellow chest marks from the mascot.
-- **NEVER** use colors other than `#111111`, `#FFFFFF`, and `#FFC21A`.
+- **NEVER** draw the mascot as a "snowman" (do not stack a separate head circle on top of a body circle; it must be one single rounded bean/egg/blob shape).
+- **NEVER** draw the two yellow chest marks as large rectangular buttons; they must be two small, subtle ticks.
+- **NEVER** use blue sky backgrounds, shadows, or background gradients; the background must be flat, pure solid white (#FFFFFF).
+- **NEVER** use heavy, perfectly smooth geometric vector lines; outlines must be thin, sketchy, and hand-drawn.
+- **NEVER** use colors other than `#111111` (black), `#FFFFFF` (white), and `#FFC21A` (yellow).
 - **NEVER** output photorealistic or 3D scene requests. Keep the prompt style strictly hand-drawn line-art.
 
 ---
