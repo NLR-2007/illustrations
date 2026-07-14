@@ -86,6 +86,9 @@ These reference illustrations define the mascot's proportions, postures, and cle
 ### 4. Live Generated ChatGPT Example (Success Launch)
 ![Mascot Launch Celebration](examples/illustrations/code-launched.jpg)
 
+### 5. Live Generated Example (Science Fair Experiment)
+![Mascot Science Fair](examples/illustrations/science-fair.png)
+
 ---
 
 ## 🛠️ Installation & Setup
