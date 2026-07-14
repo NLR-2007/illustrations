@@ -11,6 +11,7 @@
     "diagram": "tsx src/index.ts diagram",
     "hybrid": "tsx src/index.ts hybrid",
     "validate": "tsx src/index.ts validate",
+    "validate:skill": "node scripts/validate-skill.mjs",
     "start": "tsx src/index.ts"
   },
   "keywords": [

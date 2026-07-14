@@ -101,10 +101,18 @@ These reference illustrations define the mascot's proportions, postures, and cle
 
 ### Install as an AI skill
 
-Give a skill-capable AI agent this repository URL and ask it to install the skill from the repository root:
+The self-contained installable skill is the `explaindraw/` directory. Clone the repository and copy only that folder into the Codex skills directory:
+
+```bash
+git clone https://github.com/NLR-2007/illustrations.git
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+cp -R ./illustrations/explaindraw "${CODEX_HOME:-$HOME/.codex}/skills/"
+```
+
+Or give a skill-capable AI agent the repository URL and ask it to install that directory:
 
 ```text
-Install the ExplainDraw skill from https://github.com/NLR-2007/illustrations
+Install the explaindraw/ skill from https://github.com/NLR-2007/illustrations
 ```
 
 Then invoke it with natural language; users do not need to write JSON:
@@ -115,7 +123,7 @@ Use $explaindraw to illustrate photosynthesis for an eight-year-old.
 Use $explaindraw to create a hybrid visual explaining how an API gateway works.
 ```
 
-The root `SKILL.md` is the agent entrypoint. It routes requests to illustration, diagram, or hybrid mode, creates required JSON internally, generates the artifact, and validates it. If GitHub cannot be resolved but the repository is already present locally, the agent should use the local checkout instead of cloning again.
+The `explaindraw/SKILL.md` file is the portable agent entrypoint. It routes requests to illustration, diagram, or hybrid mode and uses the host's image and presentation tools directly. The root `SKILL.md` additionally supports repository development and the local TypeScript generator. If GitHub cannot be resolved but the repository is already present locally, the agent should use the local checkout instead of cloning again.
 
 ### Local CLI setup
 

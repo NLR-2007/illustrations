@@ -1,0 +1,4 @@
+interface:
+  display_name: "ExplainDraw"
+  short_description: "Create illustrations, diagrams, and hybrid visuals"
+  default_prompt: "Use $explaindraw to turn this topic into the clearest appropriate visual artifact."

@@ -1,9 +1,9 @@
-I have uploaded the ExplainDraw repository package. Unpack it and read SKILL.md first.
+I have uploaded the ExplainDraw repository package. Unpack it and read explaindraw/SKILL.md first.
 
 Then read only the mode-specific instructions required for my request:
-- Illustration: skills/illustration/SKILL.md, docs/MASCOT_BIBLE.md, docs/IMAGE_GENERATION_RULES.md, and every image in references/mascot/.
-- Flowchart or diagram: skills/diagram/SKILL.md and the matching rule file in skills/diagram/.
-- Combined visual: skills/hybrid/SKILL.md and HYBRID_RULES.md, plus the relevant illustration and diagram rules.
+- Illustration: explaindraw/references/illustration-mode.md, explaindraw/references/visual-language.md, and every image in explaindraw/assets/mascot/.
+- Flowchart or diagram: explaindraw/references/diagram-mode.md and explaindraw/references/visual-language.md.
+- Combined visual: explaindraw/references/hybrid-mode.md, explaindraw/references/illustration-mode.md, explaindraw/references/diagram-mode.md, and explaindraw/references/visual-language.md.
 
 MY REQUEST:
 [REPLACE THIS LINE WITH THE TOPIC AND OUTPUT YOU WANT]
@@ -16,4 +16,4 @@ For a flowchart or diagram, create a clear presentation-ready diagram. Prefer an
 
 For a hybrid request, combine the illustration and structured diagram in one 16:9 presentation layout. Keep diagram labels editable when PowerPoint generation is available.
 
-Before returning the result, check it against the non-negotiable rules in SKILL.md. If this chat cannot unpack files, inspect images, generate an image, or create a PowerPoint, state that limitation directly instead of silently replacing the requested workflow.
+Before returning the result, check it against explaindraw/references/qa-checklist.md. If this chat cannot unpack files, inspect images, generate an image, or create a PowerPoint, state that limitation directly instead of silently replacing the requested workflow.
