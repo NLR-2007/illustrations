@@ -83,6 +83,9 @@ These reference illustrations define the mascot's proportions, postures, and cle
 ### 3. Mascot Interaction & Accessories
 ![Mascot Accessory](references/mascot/6246698090433810147.jpg)
 
+### 4. Live Generated ChatGPT Example (Success Launch)
+![Mascot Launch Celebration](examples/illustrations/code-launched.jpg)
+
 ---
 
 ## 🛠️ Installation & Setup
