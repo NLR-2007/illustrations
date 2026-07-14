@@ -18,7 +18,8 @@ You must strictly adhere to the mascot and styling rules below. Avoid common ren
 - **Body**: **ONE single, continuous, vertical egg-shaped or potato-shaped smooth white outline**. Do **NOT** stack a separate head circle on top of a body circle (no "snowman" structure). The eyes and mouth are drawn directly inside this single shape.
 - **Eyes**: Large upright white ovals, each containing a large solid black circular pupil. Inside each black pupil, there are two tiny white circular light reflections (one larger at the top-left, one smaller at the bottom-right). Above the eyes are two thin curved black eyebrow lines.
 - **Mouth**: A simple, thin, black hand-drawn curved smile line, positioned directly below the eyes.
-- **Chest Marks**: Exactly **two small, organic yellow paint marks** on the center of the chest, stacked one above the other. Do **NOT** draw them as large rectangular buttons, squares, or code symbols.
+- **Chest Marks**: Exactly **two small, organic yellow paint marks** on the center of the chest, stacked one above the other. Do **NOT** draw them as large rectangular buttons, squares, or code symbols (like `</>`, brackets, or gears), even if the scene is about coding or technology. The chest marks must always remain two yellow paint blobs.
+- **Face/Cheeks**: Keep the face completely clean and minimal. Do **NOT** add red, pink, or yellow cheek blush marks, or makeup.
 - **Limbs**: Thin, sketchy black arms ending in hands with 4 fingers each, and thin sketchy black legs ending in flat black feet.
 - **Clothing**: **None**. Do not add shirts, pants, hats, or scarves unless required by the scene context.
 

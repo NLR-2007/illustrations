@@ -47,9 +47,10 @@ CHARACTER LOCK:
 - Simple mascot with a vertical egg-shaped or potato-shaped smooth white body outline (MUST be a single continuous rounded shape, NOT a stacked head-and-body "snowman" structure).
 - Large upright oval white eyes, each containing a large solid black circular pupil. Inside each black pupil, there are two tiny white circular light reflections (one larger at the top-left, one smaller at the bottom-right). Above the eyes are two thin curved black eyebrow lines.
 - Tiny friendly mouth (simple thin black hand-drawn curved smile line directly below the eyes).
+- Face must be completely clean. Do NOT draw red, pink, or yellow cheek blush marks, and no makeup.
 - Thin sketchy hand-drawn black arms ending in hands with 4 fingers each.
 - Thin sketchy hand-drawn black legs ending in flat black feet.
-- Exactly two small, organic yellow paint marks on the center of the chest, stacked one above the other (critical identification; do NOT draw them as large rectangular buttons, code symbols, or badges).
+- Exactly two small, organic yellow paint marks on the center of the chest, stacked one above the other (critical identification; do NOT replace them with any other symbols or shapes like '</>', brackets, gears, or badges, regardless of the scene topic. The yellow marks must stay exactly two yellow paint blobs).
 - Proportions are short and friendly. No clothes except required accessories.
 
 STYLE LOCK:
@@ -64,7 +65,7 @@ STYLE LOCK:
  * Builds the standard negative prompt.
  */
 export function buildNegativePrompt(): string {
-  return `photorealistic, 3d render, blender, digital painting, oil painting, watercolor, complex background, scenery, shadows, gradients, realistic human anatomy, extra limbs, extra arms, extra legs, malformed hands, fingers, clothes, shirts, pants, hats, shoes, socks, missing chest marks, different colors, red, blue, green, text, letters, words, watermarks, logos, signature, frame, border`;
+  return `photorealistic, 3d render, blender, digital painting, oil painting, watercolor, complex background, scenery, shadows, gradients, realistic human anatomy, extra limbs, extra arms, extra legs, malformed hands, fingers, clothes, shirts, pants, hats, shoes, socks, missing chest marks, different colors, red, blue, green, text, letters, words, watermarks, logos, signature, frame, border, cheeks blush, blush marks, cheek blush, code symbol chest mark, '</>' symbol chest mark, gear chest mark, button chest marks`;
 }
 
 /**

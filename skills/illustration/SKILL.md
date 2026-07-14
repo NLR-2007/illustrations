@@ -40,7 +40,8 @@ A structured request JSON matching the request schema:
 - **NEVER** draw the mascot as a "snowman" (do not stack a separate head circle on top of a body circle; it must be one single continuous vertical egg-shaped or potato-shaped smooth white body outline).
 - **NEVER** draw the eyes as solid-black circles without reflections; they must be large upright white ovals containing black pupils with two tiny white light reflections in each.
 - **NEVER** draw the arms without fingers; they must end in hand-drawn hands with 4 fingers each.
-- **NEVER** draw the two yellow chest marks as large rectangular buttons, squares, code symbols, or badges; they must be exactly two small, organic yellow paint marks stacked vertically on the chest.
+- **NEVER** draw the two yellow chest marks as large rectangular buttons, squares, code symbols (like `</>`, brackets, or gears), or badges; they must be exactly two small, organic yellow paint marks stacked vertically on the chest, regardless of the scene topic.
+- **NEVER** add red, pink, or yellow cheek blush marks, makeup, or facial decorations.
 - **NEVER** use blue sky backgrounds, shadows, or background gradients; the background must be flat, pure solid white (#FFFFFF).
 - **NEVER** use heavy, perfectly smooth geometric vector lines; outlines must be thin, sketchy, and hand-drawn.
 - **NEVER** use colors other than `#111111` (black), `#FFFFFF` (white), and `#FFC21A` (yellow).

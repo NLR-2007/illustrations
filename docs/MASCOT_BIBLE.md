@@ -55,4 +55,7 @@ If you are an AI image generator or assistant reading these guidelines, you **MU
 2. **NO HEAVY VECTOR CLIP-ART STYLE**: Do **NOT** draw thick, perfectly smooth geometric vector lines. The line art **MUST** look like a **thin, sketchy, imperfect hand-drawn ink/pencil outline**. 
 3. **NO BACKGROUND GRADIENTS OR COLORS**: Do **NOT** add blue sky gradients, shadows, or background elements unless explicitly requested. The background **MUST** be **100% solid flat pure white (`#FFFFFF`)**.
 4. **NO RECTANGULAR/BLOCKY CHEST MARKS**: Do **NOT** draw the yellow chest marks as large rectangular boxes, squares, or button shapes. They **MUST** be **two small, thin, subtle diagonal brushstrokes or ticks** on the chest.
+5. **NO TOPIC-BASED CHEST SYMBOLS**: Do **NOT** replace the two yellow chest marks with any topic-related icons, symbols, or logos (such as `</>`, brackets, code shapes, gears, or badges), even if the scene is about coding or math. The chest marks **MUST** always remain exactly two stacked yellow paint blobs.
+6. **NO CHEEK BLUSH OR MAKEUP**: Do **NOT** add yellow, red, or pink blush marks on the cheeks. Keep the face clean, empty, and minimal.
+
 
