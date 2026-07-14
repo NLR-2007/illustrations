@@ -1,202 +1,260 @@
 # ExplainDraw
 
-This repository is an AI Visual Explanation System designed to turn ideas, topics, processes, technical concepts, and real-world scenarios into clear, visual content.
+### Turn ideas into illustrations, editable flowcharts, and hybrid presentation visuals
 
-> Turn the key judgments, workflows, states, and metaphors of your concepts into a set of clean, white-background, hand-drawn illustrations and fully editable native PowerPoint diagrams.
->
-> 16:9 widescreen | Original Mascot IP | pure white hand-drawn look | PowerPoint native shapes | Codex Skill
+ExplainDraw is a reusable AI visual language and generation workflow for Codex, ChatGPT, and other capable AI agents. It transforms educational topics, technical systems, business processes, and abstract ideas into clean white-background visuals with a recognizable mascot, hand-drawn black lines, and focused yellow accents.
 
----
+> One visual language. Three output modes. Natural-language input.
 
-## What This Repo Is
-
-ExplainDraw is a Codex Skill and visual automation engine that helps an AI agent (like ChatGPT, Claude Code, Cursor, or Codex CLI) and human creators generate:
-1. **Mascot-Driven Illustrations** (analogies, stories, and conceptual scenes).
-2. **Editable Native Diagrams** (flowcharts, architectures, timelines, roadmaps).
-3. **Hybrid Slide Layouts** (conceptual mascot scene on the left, structured editable flowchart on the right).
-
-It is not a repository of flat design templates. It isolation-routes user requests and compiles custom visual layers so that diagrams are never flattened into images, remaining 100% editable inside PowerPoint.
-
-### 🤖 AI Codex Skill Integration
-If you are an AI assistant (like Claude, ChatGPT, Cursor, or Codex CLI) reading this repository, load the rules directly from these files:
-- 🛠️ **[Master SKILL.md Raw Text](https://raw.githubusercontent.com/NLR-2007/illustrations/main/SKILL.md)**
-- 📖 **[Mascot Bible Raw Text](https://raw.githubusercontent.com/NLR-2007/illustrations/main/docs/MASCOT_BIBLE.md)**
+`Illustration` · `Flowchart` · `Hybrid` · `Editable PowerPoint` · `16:9` · `Codex Skill`
 
 ---
 
-## Who It Is For
+## See what it creates
 
-### A Good Fit For:
-- **Educators & Trainers**: People who want to explain complex science or tech topics to children, students, or college classes.
-- **Engineers & Architects**: Developers wanting abstract logic or cloud deployment architecture rendered as clear system flows.
-- **Presenters & Startups**: Pitch deck creators who need clean slide designs that look professional, minimal, and premium.
-- **AI Coding Agents**: Systems like Codex, Claude Code, Antigravity, and Cursor needing a structured visual language schema.
-- **PowerPoint Power Users**: Users who require fully editable shape elements (rectangles, diamonds, ovals, connectors, text) that can be resized, restyled, and searched directly in PPTX.
+### Illustration — explain a concept visually
 
-### Not a Fit For:
-- People who want complex 3D rendering, gradients, or photorealistic scenes.
-- People who want generic clip-art in dozens of arbitrary colors.
-- People who want flat, un-editable image flowcharts when they could have had native PowerPoint vectors.
+The mascot participates in the explanation instead of appearing as decoration.
 
----
+![ExplainDraw photosynthesis illustration](examples/showcase/illustration.png)
 
-## What It Produces
+### Flowchart — communicate precise logic
 
-### Default Output:
-- **16:9 widescreen PPTX decks** with native editable shapes.
-- **Scene Plans (`scene-plan.json`)** detailing character coordinates and visual flows.
-- **Prompt Packages (`final-image-prompt.md`, `negative-prompt.md`)** with locked styling and character features.
-- **Audit Reports (`validation-report.md`)** checking for shape overlaps, off-slide clip margins, and prompt rules.
+Structured processes use standard shapes, readable labels, clear branches, and meaningful yellow emphasis. PowerPoint output can remain editable when presentation tools are available.
 
-### Default Non-Output:
-- Flat PDF or flattened PNG/JPEG infographic pages.
-- Complex background scenery or multi-colored gradients.
-- Text-crowded slides with font clipping.
+![ExplainDraw editable login flowchart](examples/showcase/flowchart.png)
+
+### Hybrid — combine a story with a system
+
+Hybrid mode places a conceptual scene and structured technical flow in one balanced composition.
+
+![ExplainDraw API request hybrid visual](examples/showcase/hybrid.png)
+
+### More generated work — Telegram automation
+
+![ExplainDraw Telegram automation visual](examples/showcase/telegram-automation.png)
+
+More examples are available in [`examples/illustrations/`](examples/illustrations/) and [`examples/showcase/`](examples/showcase/).
 
 ---
 
-## Visual Style
+## Choose the right mode
 
-ExplainDraw enforces a strict visual identity for both illustrations and PowerPoint slides:
+| What you need | Mode | Typical output |
+|---|---|---|
+| Analogy, educational scene, story, or mascot-led concept | Illustration | PNG image |
+| Flowchart, architecture, timeline, decision tree, or pipeline | Diagram | Editable PPTX or PNG preview |
+| Conceptual scene plus precise technical flow | Hybrid | 16:9 image or hybrid PPTX |
 
-- **Background**: 100% solid flat pure white (`#FFFFFF`). No shadows, no gradients, no paper texture.
-- **Mascot Character**: 
-  - Rounded white body (**one single continuous egg/bean shape**, NOT a stacked head-on-body snowman shape).
-  - Large expressive solid-black circular eyes and a tiny friendly hand-drawn smile.
-  - Thin, wobbly, imperfect hand-drawn black arms and legs.
-  - Exactly **two small, thin, diagonal yellow ticks** on the chest (Hex `#FFC21A`). No button shapes.
-- **Outlines**: Sketchy, wobbly, hand-drawn thin black ink lines. No heavy vector curves.
-- **Slide Themes**: Balanced white space (35% to 50% empty space), with black borders (`#111111`) and yellow highlights (`#FFC21A`) only.
+You do not need to prepare JSON. Describe the topic and desired output in natural language.
 
 ---
 
-## Example Mascot Visuals
+## Fastest way: use it in Codex
 
-These reference illustrations define the mascot's proportions, postures, and clean hand-drawn line style:
-
-### 1. Mascot Portrait & Yellow Chest Marks
-![Mascot Reference](references/mascot/6246698090433810145.jpg)
-
-### 2. Mascot Standing Pose
-![Mascot Standing](references/mascot/6246698090433810171.jpg)
-
-### 3. Mascot Interaction & Accessories
-![Mascot Accessory](references/mascot/6246698090433810147.jpg)
-
-### 4. Live Generated ChatGPT Example (Success Launch)
-![Mascot Launch Celebration](examples/illustrations/code-launched.jpg)
-
-### 5. Live Generated Example (Science Fair Experiment)
-![Mascot Science Fair](examples/illustrations/science-fair.png)
-
-### 6. Live Generated Infographic Example (Push Files to Git)
-![Mascot Git Flowchart](examples/illustrations/git-flowchart.png)
-
-### 7. Live Generated Comic Strip Example (Developer Jokes)
-![Mascot Developer Jokes](examples/illustrations/developer-jokes.png)
-
----
-
-## 🛠️ Installation & Setup
-
-### Install as an AI skill
-
-The self-contained installable skill is the `explaindraw/` directory. Clone the repository and copy only that folder into the Codex skills directory:
-
-```bash
-git clone https://github.com/NLR-2007/illustrations.git
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R ./illustrations/explaindraw "${CODEX_HOME:-$HOME/.codex}/skills/"
-```
-
-Or give a skill-capable AI agent the repository URL and ask it to install that directory:
+### Option 1 — ask Codex to install the skill
 
 ```text
 Install the explaindraw/ skill from https://github.com/NLR-2007/illustrations
 ```
 
-Then invoke it with natural language; users do not need to write JSON:
+The portable skill lives in [`explaindraw/`](explaindraw/). After installation, start a new Codex thread and invoke it as `$explaindraw`.
 
 ```text
-Use $explaindraw to draw an editable flowchart of our login and password-reset process.
-Use $explaindraw to illustrate photosynthesis for an eight-year-old.
-Use $explaindraw to create a hybrid visual explaining how an API gateway works.
+Use $explaindraw in illustration mode to explain photosynthesis to an eight-year-old.
 ```
 
-The `explaindraw/SKILL.md` file is the portable agent entrypoint. It routes requests to illustration, diagram, or hybrid mode and uses the host's image and presentation tools directly. The root `SKILL.md` additionally supports repository development and the local TypeScript generator. If GitHub cannot be resolved but the repository is already present locally, the agent should use the local checkout instead of cloning again.
+```text
+Use $explaindraw in diagram mode to create an editable PowerPoint flowchart for login and password reset.
+```
 
-### Local CLI setup
+```text
+Use $explaindraw in hybrid mode to show how a Telegram bot triggers an automation workflow and returns a response.
+```
+
+### Option 2 — clone and use it from the repository
 
 ```bash
-# Clone the repository
 git clone https://github.com/NLR-2007/illustrations.git
 cd illustrations
-
-# Install dependencies
 npm install
 ```
 
+Then ask Codex:
+
+```text
+Read explaindraw/SKILL.md and create a hybrid visual explaining how an API gateway carries a request.
+```
+
+If Codex needs the local PowerPoint generator, it can run the CLI commands documented below.
+
 ---
 
-## 🚀 CLI Commands & Workflows
+## Use it in ChatGPT or another chat interface
 
-### 1. Run Visual Router (General Entrypoint)
-Automatically decides layout modes and compiles prompt packages or diagrams.
+Normal chat interfaces do not reliably install a GitHub repository as a persistent skill merely because a URL was pasted. Use one of these supported approaches.
+
+### Method A — upload the prepared ZIP
+
+1. Download [`release/explaindraw-chatgpt-upload.zip`](release/explaindraw-chatgpt-upload.zip).
+2. Upload the ZIP to the chat.
+3. Open [`share/CHATGPT_UPLOAD_PROMPT.txt`](share/CHATGPT_UPLOAD_PROMPT.txt), replace the request placeholder, and paste the complete prompt into the conversation.
+4. Ask the chat to generate the image, flowchart, or hybrid visual.
+
+Example:
+
+```text
+Use the uploaded ExplainDraw package in hybrid mode.
+Create a 16:9 visual explaining Telegram automation:
+User message → Telegram bot → Automation workflow → External service → Bot response.
+Generate the actual image and follow the mascot and QA references in the package.
+```
+
+If the chat reports `Could not resolve host: github.com`, do not retry cloning. Upload the ZIP directly and say:
+
+```text
+Do not clone GitHub. Unpack the uploaded ZIP, read explaindraw/SKILL.md, and use ExplainDraw for my request.
+```
+
+### Method B — publish a custom GPT
+
+For a permanent one-click chat experience, create a custom GPT named **ExplainDraw**:
+
+1. Copy the contents of [`explaindraw/SKILL.md`](explaindraw/SKILL.md) into the GPT instructions.
+2. Upload the `explaindraw/references/` files as knowledge.
+3. Upload the mascot and example images from `explaindraw/assets/`.
+4. Enable image generation.
+5. Enable file/data-analysis capabilities if you want the GPT to create downloadable presentation files.
+6. Publish the GPT and share its chat link.
+
+Users can then request visuals without cloning or uploading the repository each time. Availability and usage limits depend on the user's chat plan and enabled tools.
+
+### Method C — paste the repository link
+
+Some chat environments can browse a public GitHub repository and follow its README directly. This may generate a correct illustration, but it is not guaranteed: repository browsing, file access, image generation, and code execution vary between products and plans. For repeatable behavior, prefer the ZIP or a published custom GPT.
+
+---
+
+## Visual identity
+
+- Pure white `#FFFFFF` background
+- Black or near-black `#111111` hand-drawn linework
+- Yellow `#FFC21A` as the only accent color
+- Thin, slightly imperfect outlines with generous negative space
+- One continuous egg/potato-shaped mascot body—not separate head and torso shapes
+- Large oval eyes with black pupils and white reflections
+- Thin arms and legs
+- Exactly two small organic yellow chest marks
+- No gradients, shadows, 3D rendering, colored scenery, or unnecessary decoration
+
+The full portable rules are in [`explaindraw/references/`](explaindraw/references/). Repository development references are in [`docs/`](docs/).
+
+---
+
+## Local automation engine
+
+The repository includes a TypeScript engine for deterministic prompt packages and native editable PowerPoint diagrams.
+
+### Route a general request
+
 ```bash
 npm run generate -- --input examples/requests/api-analogy.json
 ```
 
-### 2. Generate Editable PowerPoint Diagrams
+### Create an editable PowerPoint diagram
+
 ```bash
 npm run diagram -- --input examples/flowcharts/login-flow.json
 ```
 
-### 3. Generate Hybrid Slide Decks (Side-by-Side)
+### Create a hybrid slide package
+
 ```bash
 npm run hybrid -- --input examples/hybrid/api-explanation.json
 ```
 
-### 4. Audit & Validate Outputs
+### Validate an output package
+
 ```bash
 npm run validate -- --input output/api-restaurant-analogy
 ```
 
----
+### Validate the portable skill
 
-## 📁 Repository Structure
-
-```
-.
-├── references/           # Mascot and scene reference files
-│   ├── mascot/           # Put your mascot reference images here
-│   └── scenes/           # Put your scene reference images here
-├── docs/                 # Style guides & provider configuration docs
-│   ├── MASCOT_BIBLE.md   # Mascot visual identity rules
-│   └── STYLE_GUIDE.md    # Hex colors and typography
-├── skills/               # Instruction manuals for LLM agents
-│   ├── illustration/     # SKILL.md for conceptual scenes
-│   ├── diagram/          # SKILL.md for editable PPTX flowcharts
-│   └── hybrid/           # SKILL.md for coordinate splitting
-├── src/                  # Core TypeScript engine code
-│   ├── router/           # Visual router layer
-│   ├── diagram/          # Layout engine and pptx writer
-│   └── illustration/     # Prompt generators and providers
-├── examples/             # 10 fully working input example JSONs
-└── tests/                # Vitest coverage tests
+```bash
+npm run validate:skill
 ```
 
 ---
 
-## 🎨 Configuration & API Keys
+## Image providers
 
-Copy the template:
+The local engine supports three provider modes through `.env`:
+
+- `manual` — always works offline and produces a complete prompt package
+- `openai-compatible` — calls a configured compatible image API
+- `custom-http` — sends generation requests to your own image service
+
 ```bash
 cp .env.example .env
 ```
-In `.env`, configure `IMAGE_PROVIDER` to `manual`, `openai-compatible`, or `custom-http`.
+
+See [`docs/PROVIDERS.md`](docs/PROVIDERS.md) for configuration details.
+
+The portable Codex skill can also call the image-generation tool already available in the host environment. When no image tool is available, it must identify the result as a prompt-only fallback rather than claiming that an image was rendered.
 
 ---
 
-## 📄 License & Asset Rights
-- **Code**: Licensed under the [MIT License](file:///d:/Ilustrations/LICENSE).
-- **Assets**: Mascot reference images and generated scene graphics are subject to the terms in [ASSET_LICENSE.md](file:///d:/Ilustrations/ASSET_LICENSE.md).
+## Repository map
+
+```text
+.
+├── explaindraw/              # Self-contained installable AI skill
+│   ├── SKILL.md
+│   ├── agents/
+│   ├── assets/
+│   └── references/
+├── examples/
+│   ├── showcase/             # Illustration, flowchart, hybrid, Telegram examples
+│   ├── requests/             # Natural-language request fixtures
+│   ├── flowcharts/           # Diagram topology examples
+│   └── hybrid/               # Hybrid request examples
+├── references/               # Source mascot and scene references
+├── skills/                   # Repository-development mode instructions
+├── docs/                     # Extended design and provider documentation
+├── src/                      # TypeScript generation engine
+├── scripts/                  # Skill validation tooling
+├── tests/                    # Automated test suite
+├── release/                  # Chat-interface upload package
+└── share/                    # Ready-to-paste ChatGPT prompt
+```
+
+---
+
+## Validation and reliability
+
+Before publishing changes:
+
+```bash
+npm test
+npm run build
+npm run validate:skill
+```
+
+ExplainDraw validates skill structure, prompt rules, diagram topology, layout bounds, hybrid pane separation, mascot identity requirements, and palette compliance. AI-generated images can still vary, so visually review generated work before publication.
+
+---
+
+## License
+
+- Code is licensed under the [`MIT License`](LICENSE).
+- Mascot references and generated visual assets follow [`ASSET_LICENSE.md`](ASSET_LICENSE.md).
+
+---
+
+## Start creating
+
+```text
+Use $explaindraw to turn this topic into the clearest appropriate visual artifact:
+[YOUR TOPIC]
+```
