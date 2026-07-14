@@ -92,6 +92,9 @@ These reference illustrations define the mascot's proportions, postures, and cle
 ### 6. Live Generated Infographic Example (Push Files to Git)
 ![Mascot Git Flowchart](examples/illustrations/git-flowchart.png)
 
+### 7. Live Generated Comic Strip Example (Developer Jokes)
+![Mascot Developer Jokes](examples/illustrations/developer-jokes.png)
+
 ---
 
 ## 🛠️ Installation & Setup
