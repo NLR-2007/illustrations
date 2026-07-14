@@ -1,0 +1,17 @@
+{
+  "title": "SQL vs NoSQL Comparison",
+  "type": "comparison",
+  "nodes": [
+    { "id": "sql_schema", "type": "process", "text": "Structured Schema" },
+    { "id": "sql_relational", "type": "process", "text": "Relational Tables" },
+    { "id": "sql_joins", "type": "process", "text": "Heavy JOIN Queries" },
+    { "id": "nosql_schema", "type": "process", "text": "Dynamic Schema" },
+    { "id": "nosql_doc", "type": "process", "text": "Document/Key-Value", "highlight": true },
+    { "id": "nosql_scale", "type": "process", "text": "Horizontal Scaling" }
+  ],
+  "connections": [
+    { "from": "sql_schema", "to": "nosql_schema", "label": "vs" },
+    { "from": "sql_relational", "to": "nosql_doc", "label": "vs" },
+    { "from": "sql_joins", "to": "nosql_scale", "label": "vs" }
+  ]
+}

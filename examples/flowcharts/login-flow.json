@@ -1,0 +1,21 @@
+{
+  "title": "User Login Flow",
+  "type": "flowchart",
+  "direction": "top-to-bottom",
+  "nodes": [
+    { "id": "start", "type": "start_end", "text": "Start" },
+    { "id": "credentials", "type": "input_output", "text": "Enter Email & Password" },
+    { "id": "validate", "type": "decision", "text": "Credentials Valid?" },
+    { "id": "error", "type": "process", "text": "Show Error" },
+    { "id": "dashboard", "type": "process", "text": "Open Dashboard", "highlight": true },
+    { "id": "end", "type": "start_end", "text": "End" }
+  ],
+  "connections": [
+    { "from": "start", "to": "credentials" },
+    { "from": "credentials", "to": "validate" },
+    { "from": "validate", "to": "error", "label": "No" },
+    { "from": "validate", "to": "dashboard", "label": "Yes" },
+    { "from": "error", "to": "credentials" },
+    { "from": "dashboard", "to": "end" }
+  ]
+}

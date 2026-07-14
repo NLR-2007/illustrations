@@ -1,0 +1,19 @@
+{
+  "title": "Software Deployment Architecture",
+  "type": "architecture",
+  "direction": "top-to-bottom",
+  "nodes": [
+    { "id": "client", "type": "input_output", "text": "Client Browser" },
+    { "id": "lb", "type": "process", "text": "Load Balancer" },
+    { "id": "web1", "type": "process", "text": "Web Server A" },
+    { "id": "web2", "type": "process", "text": "Web Server B" },
+    { "id": "db", "type": "database", "text": "Primary DB", "highlight": true }
+  ],
+  "connections": [
+    { "from": "client", "to": "lb" },
+    { "from": "lb", "to": "web1" },
+    { "from": "lb", "to": "web2" },
+    { "from": "web1", "to": "db" },
+    { "from": "web2", "to": "db" }
+  ]
+}

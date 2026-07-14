@@ -1,0 +1,13 @@
+{
+  "title": "AI vs Traditional Programming",
+  "type": "venn",
+  "nodes": [
+    { "id": "left_rules", "type": "process", "text": "Explicit Rules" },
+    { "id": "left_logic", "type": "process", "text": "Deterministic logic" },
+    { "id": "center_code", "type": "process", "text": "Writing code", "highlight": true },
+    { "id": "center_problems", "type": "process", "text": "Solving problems" },
+    { "id": "right_data", "type": "process", "text": "Training data" },
+    { "id": "right_prob", "type": "process", "text": "Probabilistic models" }
+  ],
+  "connections": []
+}

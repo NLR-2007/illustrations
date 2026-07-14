@@ -1,0 +1,10 @@
+{
+  "topic": "Explain how an API works using a restaurant analogy",
+  "purpose": "educational presentation",
+  "audience": "TEEN",
+  "mode": "illustration",
+  "format": "16:9",
+  "style": "default",
+  "editable": false,
+  "outputName": "api-restaurant-analogy"
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Product Development Timeline",
+  "type": "timeline",
+  "nodes": [
+    { "id": "m1", "type": "process", "text": "Q1: Research & Prototyping" },
+    { "id": "m2", "type": "process", "text": "Q2: Core Engine Coding" },
+    { "id": "m3", "type": "process", "text": "Q3: Beta Test Release", "highlight": true },
+    { "id": "m4", "type": "process", "text": "Q4: Launch & Scaling" }
+  ],
+  "connections": [
+    { "from": "m1", "to": "m2" },
+    { "from": "m2", "to": "m3" },
+    { "from": "m3", "to": "m4" }
+  ]
+}
