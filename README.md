@@ -4,6 +4,33 @@
 >
 > *Illustrations for stories. Editable diagrams for structure. Both when you need them.*
 
+---
+
+## 🤖 AI SYSTEM PROMPT & MASCOT RULES (READ FIRST)
+
+If you are an AI assistant or image generator (such as Claude, ChatGPT, Cursor, or Stable Diffusion) tasked with drawing the mascot or writing prompts, **you must read and strictly follow these rules**:
+
+### 1. Mascot Characteristics (Locks)
+- **Body**: **ONE single, continuous, rounded bean/egg/blob shape**. Do **NOT** stack a separate head circle on top of a body circle (no "snowman" structure). The eyes and mouth are drawn directly inside this single shape.
+- **Eyes**: Large, expressive, solid-black circular eyes (no irises/pupils).
+- **Mouth**: A simple, thin, black hand-drawn smile line.
+- **Chest Marks**: Exactly **two small, thin, bright yellow diagonal ticks** on the chest (Hex `#FFC21A`). Do **NOT** draw them as large rectangular buttons, squares, or badges.
+- **Limbs**: Thin, imperfect, hand-drawn sketchy black arms and legs.
+- **Clothing**: **None**. Do not add shirts, pants, hats, or scarves.
+
+### 2. Illustration Style (Locks)
+- **Style**: Minimalist, editorial, hand-drawn line-art outlines. Outlines must look like **thin, sketchy, imperfect hand-drawn ink/pencil strokes**, not thick, perfectly smooth geometric vector lines.
+- **Background**: **100% solid flat pure white (`#FFFFFF`)**. Absolutely **NO** sky color, blue gradients, shadows, or background elements.
+- **Colors**: Strictly black, white, and accent yellow (`#FFC21A`) highlights only. No other colors.
+
+### 3. Raw Text URLs (For Offline or Limited AIs)
+If your environment blocks standard GitHub page rendering, fetch these raw text guides directly:
+- 📖 [Mascot Bible Raw Text](https://raw.githubusercontent.com/NLR-2007/illustrations/main/docs/MASCOT_BIBLE.md)
+- 🎨 [Style Guide Raw Text](https://raw.githubusercontent.com/NLR-2007/illustrations/main/docs/STYLE_GUIDE.md)
+- 📝 [Prompt Exclusions Raw Text](https://raw.githubusercontent.com/NLR-2007/illustrations/main/docs/IMAGE_GENERATION_RULES.md)
+
+---
+
 ExplainDraw is an open-source AI Visual Explanation System that turns ideas, processes, system architectures, and educational concepts into structured slides. It operates in three core visual modes:
 
 1. **Illustration Mode**: Produces mascot-driven storyboards and analogy visuals.
