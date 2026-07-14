@@ -17,6 +17,11 @@ ExplainDraw is a Codex Skill and visual automation engine that helps an AI agent
 
 It is not a repository of flat design templates. It isolation-routes user requests and compiles custom visual layers so that diagrams are never flattened into images, remaining 100% editable inside PowerPoint.
 
+### 🤖 AI Codex Skill Integration
+If you are an AI assistant (like Claude, ChatGPT, Cursor, or Codex CLI) reading this repository, load the rules directly from these files:
+- 🛠️ **[Master SKILL.md Raw Text](https://raw.githubusercontent.com/NLR-2007/illustrations/main/SKILL.md)**
+- 📖 **[Mascot Bible Raw Text](https://raw.githubusercontent.com/NLR-2007/illustrations/main/docs/MASCOT_BIBLE.md)**
+
 ---
 
 ## Who It Is For
