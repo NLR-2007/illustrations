@@ -99,6 +99,26 @@ These reference illustrations define the mascot's proportions, postures, and cle
 
 ## 🛠️ Installation & Setup
 
+### Install as an AI skill
+
+Give a skill-capable AI agent this repository URL and ask it to install the skill from the repository root:
+
+```text
+Install the ExplainDraw skill from https://github.com/NLR-2007/illustrations
+```
+
+Then invoke it with natural language; users do not need to write JSON:
+
+```text
+Use $explaindraw to draw an editable flowchart of our login and password-reset process.
+Use $explaindraw to illustrate photosynthesis for an eight-year-old.
+Use $explaindraw to create a hybrid visual explaining how an API gateway works.
+```
+
+The root `SKILL.md` is the agent entrypoint. It routes requests to illustration, diagram, or hybrid mode, creates required JSON internally, generates the artifact, and validates it. If GitHub cannot be resolved but the repository is already present locally, the agent should use the local checkout instead of cloning again.
+
+### Local CLI setup
+
 ```bash
 # Clone the repository
 git clone https://github.com/NLR-2007/illustrations.git

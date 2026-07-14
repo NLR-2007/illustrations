@@ -1,0 +1,19 @@
+I have uploaded the ExplainDraw repository package. Unpack it and read SKILL.md first.
+
+Then read only the mode-specific instructions required for my request:
+- Illustration: skills/illustration/SKILL.md, docs/MASCOT_BIBLE.md, docs/IMAGE_GENERATION_RULES.md, and every image in references/mascot/.
+- Flowchart or diagram: skills/diagram/SKILL.md and the matching rule file in skills/diagram/.
+- Combined visual: skills/hybrid/SKILL.md and HYBRID_RULES.md, plus the relevant illustration and diagram rules.
+
+MY REQUEST:
+[REPLACE THIS LINE WITH THE TOPIC AND OUTPUT YOU WANT]
+
+Use the uploaded mascot photographs as strict character references. Preserve the single continuous egg/potato-shaped white body, eye construction, thin black hand-drawn limbs, and exactly two small yellow chest marks. Preserve the repository's pure-white background, thin imperfect black linework, and yellow #FFC21A-only accent palette. Do not invent a different mascot or visual style.
+
+For an illustration, generate the actual image in this chat when image generation is available. Create a new scene for my topic while keeping the referenced character design and visual language.
+
+For a flowchart or diagram, create a clear presentation-ready diagram. Prefer an editable PowerPoint file when file/code tools are available; otherwise generate a clean diagram image using the same visual language.
+
+For a hybrid request, combine the illustration and structured diagram in one 16:9 presentation layout. Keep diagram labels editable when PowerPoint generation is available.
+
+Before returning the result, check it against the non-negotiable rules in SKILL.md. If this chat cannot unpack files, inspect images, generate an image, or create a PowerPoint, state that limitation directly instead of silently replacing the requested workflow.

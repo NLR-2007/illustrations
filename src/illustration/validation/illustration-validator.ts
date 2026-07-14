@@ -38,10 +38,21 @@ export function validateIllustrationPackage(
   if (promptLower.includes('black eyes') || promptLower.includes('circular eyes') || promptLower.includes('oval white eyes') || promptLower.includes('black pupils')) identityScore += 3;
   if (promptLower.includes('chest marks') || (promptLower.includes('chest') && promptLower.includes('marks'))) identityScore += 4;
 
-  const colorCompliance = !promptLower.includes('red') && 
-                          !promptLower.includes('blue') && 
-                          !promptLower.includes('green') && 
-                          !promptLower.includes('gradient');
+  // Validate the prompt contract, not isolated color words. Correct prompts mention
+  // forbidden colors inside negative instructions (for example, "NO gradients").
+  const negativeLower = negPromptText.toLowerCase();
+  const declaresAllowedPalette =
+    promptLower.includes('white background') &&
+    (promptLower.includes('black outline') || promptLower.includes('black line')) &&
+    (promptLower.includes('yellow') || promptLower.includes('#ffc21a')) &&
+    (promptLower.includes('only') || promptLower.includes('strictly'));
+  const excludesForbiddenPalette =
+    ['red', 'blue', 'green', 'gradient'].every(term =>
+      negativeLower.includes(term) ||
+      promptLower.includes(`no ${term}`) ||
+      promptLower.includes(`do not draw ${term}`)
+    );
+  const colorCompliance = declaresAllowedPalette && excludesForbiddenPalette;
 
   const overallPass = styleScore >= 6 && identityScore >= 7 && colorCompliance;
 

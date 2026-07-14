@@ -45,11 +45,31 @@ describe('Illustration Planning & Prompt Engine', () => {
   });
 
   it('audits prompt text and returns compliance reports', () => {
-    const prompt = 'Crisp black outline drawing of mascot with yellow chest marks, minimal hand-drawn style, white background';
-    const negPrompt = 'photorealistic, 3d render';
+    const prompt = 'Crisp black outline drawing of mascot with yellow chest marks, minimal hand-drawn style, white background, using black, white, and yellow only; no gradients';
+    const negPrompt = 'photorealistic, 3d render, red, blue, green, gradients';
 
     const report = validateIllustrationPackage('test-audit', prompt, negPrompt);
     expect(report.identityScore).toBeGreaterThanOrEqual(4); // yellow chest marks scored +4
     expect(report.colorCompliance).toBe(true);
+  });
+
+  it('does not treat forbidden colors in negative instructions as violations', () => {
+    const request: RequestInput = {
+      topic: 'Explain photosynthesis to a child',
+      purpose: 'worksheet',
+      audience: 'CHILD_8_12',
+      mode: 'illustration',
+      format: '1:1',
+      style: 'default',
+      editable: false,
+      outputName: 'photosynthesis-validation-test'
+    };
+
+    const prompt = buildPositivePrompt(planIllustrationScene(request), request);
+    const negPrompt = 'red, blue, green, gradients, photorealistic, 3d render';
+    const report = validateIllustrationPackage(request.outputName, prompt, negPrompt);
+
+    expect(report.colorCompliance).toBe(true);
+    expect(report.overallPass).toBe(true);
   });
 });
