@@ -1,84 +1,91 @@
 # ExplainDraw
 
-> **Turn ideas into visuals people understand.**
+This repository is an AI Visual Explanation System designed to turn ideas, topics, processes, technical concepts, and real-world scenarios into clear, visual content.
+
+> Turn the key judgments, workflows, states, and metaphors of your concepts into a set of clean, white-background, hand-drawn illustrations and fully editable native PowerPoint diagrams.
 >
-> *Illustrations for stories. Editable diagrams for structure. Both when you need them.*
+> 16:9 widescreen | Original Mascot IP | pure white hand-drawn look | PowerPoint native shapes | Codex Skill
 
 ---
 
-## 🤖 AI SYSTEM PROMPT & MASCOT RULES (READ FIRST)
+## What This Repo Is
 
-If you are an AI assistant or image generator (such as Claude, ChatGPT, Cursor, or Stable Diffusion) tasked with drawing the mascot or writing prompts, **you must read and strictly follow these rules**:
+ExplainDraw is a Codex Skill and visual automation engine that helps an AI agent (like ChatGPT, Claude Code, Cursor, or Codex CLI) and human creators generate:
+1. **Mascot-Driven Illustrations** (analogies, stories, and conceptual scenes).
+2. **Editable Native Diagrams** (flowcharts, architectures, timelines, roadmaps).
+3. **Hybrid Slide Layouts** (conceptual mascot scene on the left, structured editable flowchart on the right).
 
-### 1. Mascot Characteristics (Locks)
-- **Body**: **ONE single, continuous, rounded bean/egg/blob shape**. Do **NOT** stack a separate head circle on top of a body circle (no "snowman" structure). The eyes and mouth are drawn directly inside this single shape.
-- **Eyes**: Large, expressive, solid-black circular eyes (no irises/pupils).
-- **Mouth**: A simple, thin, black hand-drawn smile line.
-- **Chest Marks**: Exactly **two small, thin, bright yellow diagonal ticks** on the chest (Hex `#FFC21A`). Do **NOT** draw them as large rectangular buttons, squares, or badges.
-- **Limbs**: Thin, imperfect, hand-drawn sketchy black arms and legs.
-- **Clothing**: **None**. Do not add shirts, pants, hats, or scarves.
-
-### 2. Illustration Style (Locks)
-- **Style**: Minimalist, editorial, hand-drawn line-art outlines. Outlines must look like **thin, sketchy, imperfect hand-drawn ink/pencil strokes**, not thick, perfectly smooth geometric vector lines.
-- **Background**: **100% solid flat pure white (`#FFFFFF`)**. Absolutely **NO** sky color, blue gradients, shadows, or background elements.
-- **Colors**: Strictly black, white, and accent yellow (`#FFC21A`) highlights only. No other colors.
-
-### 3. Raw Text URLs (For Offline or Limited AIs)
-If your environment blocks standard GitHub page rendering, fetch these raw text guides directly:
-- 📖 [Mascot Bible Raw Text](https://raw.githubusercontent.com/NLR-2007/illustrations/main/docs/MASCOT_BIBLE.md)
-- 🎨 [Style Guide Raw Text](https://raw.githubusercontent.com/NLR-2007/illustrations/main/docs/STYLE_GUIDE.md)
-- 📝 [Prompt Exclusions Raw Text](https://raw.githubusercontent.com/NLR-2007/illustrations/main/docs/IMAGE_GENERATION_RULES.md)
+It is not a repository of flat design templates. It isolation-routes user requests and compiles custom visual layers so that diagrams are never flattened into images, remaining 100% editable inside PowerPoint.
 
 ---
 
-ExplainDraw is an open-source AI Visual Explanation System that turns ideas, processes, system architectures, and educational concepts into structured slides. It operates in three core visual modes:
+## Who It Is For
 
-1. **Illustration Mode**: Produces mascot-driven storyboards and analogy visuals.
-2. **Editable Diagram Mode**: Generates native PowerPoint shapes, flowcharts, and timelines that remain fully editable.
-3. **Hybrid Mode**: Combines conceptual mascot drawings on one side and structured native diagrams on the other.
+### A Good Fit For:
+- **Educators & Trainers**: People who want to explain complex science or tech topics to children, students, or college classes.
+- **Engineers & Architects**: Developers wanting abstract logic or cloud deployment architecture rendered as clear system flows.
+- **Presenters & Startups**: Pitch deck creators who need clean slide designs that look professional, minimal, and premium.
+- **AI Coding Agents**: Systems like Codex, Claude Code, Antigravity, and Cursor needing a structured visual language schema.
+- **PowerPoint Power Users**: Users who require fully editable shape elements (rectangles, diamonds, ovals, connectors, text) that can be resized, restyled, and searched directly in PPTX.
 
----
-
-## 🗺️ System Architecture
-
-```mermaid
-graph TD
-    A[User Request / JSON Input] --> B[Visual Router]
-    B -->|Illustration Mode| C[Illustration Planner]
-    B -->|Diagram Mode| D[Layout Engine]
-    B -->|Hybrid Mode| E[Hybrid orchestrator]
-    
-    C --> F[Prompt Builder + Style Lock]
-    F --> G[Image Providers: Manual/API]
-    
-    D --> H[Coordinate Placement Math]
-    H --> I[PptxGenJS Slide Writer]
-    
-    E --> F
-    E --> H
-    
-    G --> J[Output Folder]
-    I --> J
-```
+### Not a Fit For:
+- People who want complex 3D rendering, gradients, or photorealistic scenes.
+- People who want generic clip-art in dozens of arbitrary colors.
+- People who want flat, un-editable image flowcharts when they could have had native PowerPoint vectors.
 
 ---
 
-## ✨ Features
+## What It Produces
 
-- **Mascot consistency**: Embeds strict rules (large black eyes, rounded white body, thin sketch limbs, two yellow chest marks) to lock visual identity across scenes.
-- **100% Editable PowerPoint Outputs**: Rectangles stay rectangles, ovals stay ovals, text stays searchable and styled, and connecting lines stay editable vector connectors. No flat, rasterized diagrams.
-- **Dynamic Text Fitting**: Programmatically checks text word wrapping. Shrinks font size or expands node widths automatically to prevent cutoffs.
-- **Router Layer**: Automatically selects the best visual mode (Illustration, Diagram, or Hybrid) based on target audience (`CHILD_5_7`, `TEEN`, `PROFESSIONAL`, etc.) and keywords.
-- **Key-free Local Operations**: Default `manual` mode compiles prompts, negative prompts, and visual plans without requiring any external subscription keys.
+### Default Output:
+- **16:9 widescreen PPTX decks** with native editable shapes.
+- **Scene Plans (`scene-plan.json`)** detailing character coordinates and visual flows.
+- **Prompt Packages (`final-image-prompt.md`, `negative-prompt.md`)** with locked styling and character features.
+- **Audit Reports (`validation-report.md`)** checking for shape overlaps, off-slide clip margins, and prompt rules.
+
+### Default Non-Output:
+- Flat PDF or flattened PNG/JPEG infographic pages.
+- Complex background scenery or multi-colored gradients.
+- Text-crowded slides with font clipping.
 
 ---
 
-## 🛠️ Installation
+## Visual Style
+
+ExplainDraw enforces a strict visual identity for both illustrations and PowerPoint slides:
+
+- **Background**: 100% solid flat pure white (`#FFFFFF`). No shadows, no gradients, no paper texture.
+- **Mascot Character**: 
+  - Rounded white body (**one single continuous egg/bean shape**, NOT a stacked head-on-body snowman shape).
+  - Large expressive solid-black circular eyes and a tiny friendly hand-drawn smile.
+  - Thin, wobbly, imperfect hand-drawn black arms and legs.
+  - Exactly **two small, thin, diagonal yellow ticks** on the chest (Hex `#FFC21A`). No button shapes.
+- **Outlines**: Sketchy, wobbly, hand-drawn thin black ink lines. No heavy vector curves.
+- **Slide Themes**: Balanced white space (35% to 50% empty space), with black borders (`#111111`) and yellow highlights (`#FFC21A`) only.
+
+---
+
+## Example Mascot Visuals
+
+These reference illustrations define the mascot's proportions, postures, and clean hand-drawn line style:
+
+### 1. Mascot Portrait & Yellow Chest Marks
+![Mascot Reference](references/mascot/6246698090433810145.jpg)
+
+### 2. Mascot Standing Pose
+![Mascot Standing](references/mascot/6246698090433810171.jpg)
+
+### 3. Mascot Interaction & Accessories
+![Mascot Accessory](references/mascot/6246698090433810147.jpg)
+
+---
+
+## 🛠️ Installation & Setup
 
 ```bash
 # Clone the repository
-git clone <repo-url>
-cd ExplainDraw
+git clone https://github.com/NLR-2007/illustrations.git
+cd illustrations
 
 # Install dependencies
 npm install
@@ -86,52 +93,51 @@ npm install
 
 ---
 
-## 🚀 Usage & CLI Examples
+## 🚀 CLI Commands & Workflows
 
-### 1. Run Router / General Generation
-Routes input and builds illustrations, diagrams, or hybrids.
+### 1. Run Visual Router (General Entrypoint)
+Automatically decides layout modes and compiles prompt packages or diagrams.
 ```bash
 npm run generate -- --input examples/requests/api-analogy.json
 ```
 
 ### 2. Generate Editable PowerPoint Diagrams
-Creates slide layouts directly from node-edge JSON schemas.
 ```bash
 npm run diagram -- --input examples/flowcharts/login-flow.json
 ```
 
-### 3. Generate Hybrid Presentation Slides
-Creates a side-by-side layout: illustration prompt package on the left, editable system flow on the right.
+### 3. Generate Hybrid Slide Decks (Side-by-Side)
 ```bash
 npm run hybrid -- --input examples/hybrid/api-explanation.json
 ```
 
-### 4. Validate Layout Quality
-Validates overlaps, coordinate bounds, and prompt compliance.
+### 4. Audit & Validate Outputs
 ```bash
 npm run validate -- --input output/api-restaurant-analogy
 ```
 
 ---
 
-## 📁 Project Structure
+## 📁 Repository Structure
 
 ```
 .
-├── references/           # Target folders for mascot references
+├── references/           # Mascot and scene reference files
 │   ├── mascot/           # Put your mascot reference images here
 │   └── scenes/           # Put your scene reference images here
-├── docs/                 # Detailed architecture & guides
+├── docs/                 # Style guides & provider configuration docs
 │   ├── MASCOT_BIBLE.md   # Mascot visual identity rules
-│   ├── STYLE_GUIDE.md    # Hex colors and typography
-│   └── PROVIDERS.md      # API config rules
+│   └── STYLE_GUIDE.md    # Hex colors and typography
 ├── skills/               # Instruction manuals for LLM agents
-├── src/                  # Core TypeScript engine
-│   ├── router/           # AI visual router
-│   ├── diagram/          # Coordinates and pptx rendering
-│   └── illustration/     # Prompt locks and providers
-├── examples/             # 10 comprehensive json examples
-└── tests/                # Vitest coverage files
+│   ├── illustration/     # SKILL.md for conceptual scenes
+│   ├── diagram/          # SKILL.md for editable PPTX flowcharts
+│   └── hybrid/           # SKILL.md for coordinate splitting
+├── src/                  # Core TypeScript engine code
+│   ├── router/           # Visual router layer
+│   ├── diagram/          # Layout engine and pptx writer
+│   └── illustration/     # Prompt generators and providers
+├── examples/             # 10 fully working input example JSONs
+└── tests/                # Vitest coverage tests
 ```
 
 ---
@@ -142,7 +148,7 @@ Copy the template:
 ```bash
 cp .env.example .env
 ```
-Inside `.env`, configure `IMAGE_PROVIDER` to `manual`, `openai-compatible`, or `custom-http`.
+In `.env`, configure `IMAGE_PROVIDER` to `manual`, `openai-compatible`, or `custom-http`.
 
 ---
 
